@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.loja.LojaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-12T10:45:34" hostname="DIOGO-DESKTOP" time="9.235">
+  <properties/>
+  <testcase name="test" classname="br.com.loja.LojaTest" time="9.235"/>
+  <system-out><![CDATA[My Store
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 11608
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 12, 2022 7:45:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
