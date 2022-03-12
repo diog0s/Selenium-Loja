@@ -14,10 +14,15 @@ public class LoginPage extends BasePage {
 
     public void insertPassword(){
         clickOn("//input[@id='passwd']");
-        writeOn("//input[@id='email']", "selenium12345");
+        writeOn("//input[@id='passwd']", "selenium12345");
     }
 
-    public void logIn(){
+    public void insertPassword(String pw){
+        clickOn("//input[@id='passwd']");
+        writeOn("//input[@id='passwd']", pw);
+    }
+
+    public void signIn(){
         clickOn("//button[@id='SubmitLogin']");
     }
 
