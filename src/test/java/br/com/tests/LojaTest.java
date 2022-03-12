@@ -55,6 +55,23 @@ public class LojaTest extends LoginPage {
         killDriver();
     }
 
+    @Test
+    public void testLoginWithEmailWrong(){
+        getDriver().get("http://automationpractice.com/index.php");
+
+        clickOnLogin();
+
+        insertEmail("email.wrong@selenium.com");
+        insertPassword();
+
+        signIn();
+
+        String alert = getDriver().findElement(By.xpath("//div[@class='alert alert-danger']/p")).getText();
+        assertEquals("There is 1 error", alert);
+
+        killDriver();
+    }
+
 
 
 

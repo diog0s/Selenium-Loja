@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.tests.LojaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-12T16:51:13" hostname="DIOGO-DESKTOP" time="10.221">
+<testsuite name="br.com.tests.LojaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-12T16:57:12" hostname="DIOGO-DESKTOP" time="11.485">
   <properties/>
-  <testcase name="testLoginWithPasswdWrong" classname="br.com.tests.LojaTest" time="10.221"/>
+  <testcase name="testLoginWithEmailWrong" classname="br.com.tests.LojaTest" time="11.485"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 47444
+  <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 28598
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 12, 2022 1:51:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 12, 2022 1:57:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

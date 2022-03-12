@@ -12,6 +12,11 @@ public class LoginPage extends BasePage {
         writeOn("//input[@id='email']", "diogotestselenium@gmail.com");
     }
 
+    public void insertEmail(String email){
+        clickOn("//input[@id='email']");
+        writeOn("//input[@id='email']", email);
+    }
+
     public void insertPassword(){
         clickOn("//input[@id='passwd']");
         writeOn("//input[@id='passwd']", "selenium12345");
