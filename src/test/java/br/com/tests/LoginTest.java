@@ -8,7 +8,7 @@ import static br.com.core.DriverFactory.getDriver;
 import static br.com.core.DriverFactory.killDriver;
 import static org.junit.Assert.assertEquals;
 
-public class LojaTest extends LoginPage {
+public class LoginTest extends LoginPage {
 
     @Test
     public void testLoginSuccessful(){
