@@ -56,8 +56,12 @@ public class PurchasesPage extends BasePage {
         getDriver().findElement(By.xpath("//a[@class='button btn btn-default standard-checkout button-medium']")).click();
     }
 
-    public void clickSaveAddress() {
+    public void clickSaveShipping() {
         getDriver().findElement(By.xpath("//button[@type='submit']/span/i")).click();
+    }
+
+    public void clickSaveAddress() {
+        clickSaveShipping();
     }
 
     public void agreeTerms() {
