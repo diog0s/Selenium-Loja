@@ -56,4 +56,20 @@ public class PurchasesPage extends BasePage {
         getDriver().findElement(By.xpath("//a[@class='button btn btn-default standard-checkout button-medium']")).click();
     }
 
+    public void clickSaveAddress() {
+        getDriver().findElement(By.xpath("//button[@type='submit']/span/i")).click();
+    }
+
+    public void agreeTerms() {
+        getDriver().findElement(By.xpath("//input[@type='checkbox']")).click();
+    }
+
+    public void payByBankWire(){
+        getDriver().findElement(By.xpath("//a[@title='Pay by bank wire']")).click();
+    }
+
+    public void confirmMyOrder(){
+        getDriver().findElement(By.xpath("//button[@class='button btn btn-default button-medium']")).click();
+    }
+
 }

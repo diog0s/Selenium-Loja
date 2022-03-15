@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 import static br.com.core.DriverFactory.getDriver;
 import static br.com.core.DriverFactory.killDriver;
+import static junit.framework.TestCase.assertEquals;
 
 public class PurchasesTest extends PurchasesPage {
 
@@ -31,8 +32,24 @@ public class PurchasesTest extends PurchasesPage {
 
         clickOnProceedToCheckout();
 
+        clickSaveAddress();
 
+        agreeTerms();
+
+        clickSaveAddress();
+
+        payByBankWire();
+
+        confirmMyOrder();
+
+        String msg = getDriver().findElement(By.xpath("//p[@class='cheque-indent']/strong")).getText();
+
+        assertEquals("Your order on My Store is complete.", msg);
 
         killDriver();
     }
+
+
+
+
 }
