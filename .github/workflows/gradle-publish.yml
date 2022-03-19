@@ -7,9 +7,7 @@
 
 name: gradle
 
-on:
-  release:
-    types: [created]
+on: pull_request
 
 jobs:
   build:
