@@ -71,6 +71,23 @@ public class PurchasesTest extends PurchasesPage {
     }
     @Test
     public void verifyStock(){
+        getDriver().get("http://automationpractice.com/index.php");
+        loginComplete();
 
+        clickOnTshirtTap();
+
+        clickOnTshirtImg();
+
+        clickOnTshirtText();
+
+        addToCart();
+
+        continueShooping();
+
+        cartDropDown();
+
+        String stock = getDriver().findElement(By.xpath("//span[@class='label label-success']")).getText();
+
+        assertEquals("In stock", stock);
     }
 }
