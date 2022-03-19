@@ -89,5 +89,7 @@ public class PurchasesTest extends PurchasesPage {
         String stock = getDriver().findElement(By.xpath("//span[@class='label label-success']")).getText();
 
         assertEquals("In stock", stock);
+
+        killDriver();
     }
 }
