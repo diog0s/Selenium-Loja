@@ -66,7 +66,7 @@ public class PurchasesTest extends PurchasesPage {
 
         assertEquals("Faded Short Sleeve T-shirts", itemName);
 
-        //KillDriver
+        //Kill Driver
         killDriver();
     }
 
