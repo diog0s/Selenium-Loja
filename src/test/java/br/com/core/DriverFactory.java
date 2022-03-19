@@ -1,8 +1,7 @@
 package br.com.core;
-import org.openqa.selenium.Dimension;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
 
@@ -15,7 +14,7 @@ public class DriverFactory {
             System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
             driver = new ChromeDriver();
         }
-            driver.manage().window().maximize();
+        driver.manage().window().maximize();
 
         return driver;
     }

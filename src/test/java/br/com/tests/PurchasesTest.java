@@ -45,6 +45,30 @@ public class PurchasesTest extends PurchasesPage {
         killDriver();
     }
 
+    @Test
+    public void testVerifyCart(){
+        getDriver().get("http://automationpractice.com/index.php");
+        loginComplete();
+
+        clickOnTshirtTap();
+
+        clickOnTshirtImg();
+
+        clickOnTshirtText();
+
+        addToCart();
+
+        continueShooping();
+
+        cartDropDown();
+
+        String itemName = getDriver().findElement(By.xpath("(//p[@class='product-name'])[2]")).getText();
+
+        assertEquals("Faded Short Sleeve T-shirts", itemName);
+
+        killDriver();
+    }
+
 
 
 

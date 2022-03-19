@@ -4,6 +4,8 @@ import br.com.core.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
@@ -74,6 +76,23 @@ public class PurchasesPage extends BasePage {
 
     public void confirmMyOrder(){
         getDriver().findElement(By.xpath("//button[@class='button btn btn-default button-medium']")).click();
+    }
+
+    public void continueShooping() {
+        getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Actions action = new Actions(getDriver());
+        WebElement element = getDriver().findElement(By.xpath("//span[@title='Continue shopping']"));
+        action.moveToElement(element);
+        element.click();
+    }
+
+    public void cartDropDown() {
+        WebElement dropDown = getDriver().findElement(By.xpath("//div[@class='shopping_cart']/a"));
+        dropDown.click();
+
+//        WebElement elementCart = getDriver().findElement(By.xpath("//a[@class='cart-images']"));
+//        Actions action = new Actions(getDriver());
+//        action.moveToElement(elementCart).click();
     }
 
 }
