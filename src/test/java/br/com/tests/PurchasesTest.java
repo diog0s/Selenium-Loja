@@ -69,8 +69,8 @@ public class PurchasesTest extends PurchasesPage {
         //Kill Driver
         killDriver();
     }
+    @Test
+    public void verifyStock(){
 
-
-
-
+    }
 }
